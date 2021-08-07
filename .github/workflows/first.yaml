@@ -1,0 +1,11 @@
+name: first
+on: push
+jobs:
+  build:
+    name: Build job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: action/checkout@v2
+      - name: Say hello
+        run: echo "Hello"
