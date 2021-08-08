@@ -19,3 +19,6 @@ jobs:
   build-final:
     runs-on: ubuntu-latest
     needs: [build-windows, build-ubuntu, build-macos]
+    steps:
+      - name: Print date
+        run: echo $(date)
