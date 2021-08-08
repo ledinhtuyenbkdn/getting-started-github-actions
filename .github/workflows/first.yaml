@@ -1,11 +1,19 @@
 name: first
 on: push
 jobs:
-  build:
+  job-one:
     name: Build job
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Say hello
-        run: echo "Hello"
+        run: echo "Hello ubuntu"
+  job-two:
+    name: Build job
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Say hello
+        run: echo "Hello windows"
