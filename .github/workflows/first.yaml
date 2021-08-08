@@ -2,7 +2,7 @@ name: first
 on: push
 jobs:
   job-one:
-    name: Build job
+    name: Build job one
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -10,7 +10,7 @@ jobs:
       - name: Say hello
         run: echo "Hello ubuntu"
   job-two:
-    name: Build job
+    name: Build job two
     runs-on: windows-latest
     steps:
       - name: Checkout
