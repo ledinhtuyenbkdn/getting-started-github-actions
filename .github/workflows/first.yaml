@@ -12,6 +12,7 @@ jobs:
   job-two:
     name: Build job two
     runs-on: windows-latest
+    needs: job-one
     steps:
       - name: Checkout
         uses: actions/checkout@v2
