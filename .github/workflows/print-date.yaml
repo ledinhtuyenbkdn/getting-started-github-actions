@@ -1,0 +1,21 @@
+name: Print date
+on: push
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Print date
+        run: echo $(date)
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print date
+        run: echo $(date)
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Print date
+        run: echo $(date)
+  build-final:
+    runs-on: ubuntu-latest
+    needs: [build-windows, build-ubuntu, build-macos]
