@@ -4,6 +4,7 @@ env:
   FILE_NAME: demo-0.0.1-SNAPSHOT.jar
 jobs:
   build-jar:
+    name: Build jar
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
