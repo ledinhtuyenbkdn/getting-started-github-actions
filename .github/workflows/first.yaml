@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Say hello
-        run: echo "Hello ubuntu!"
+        run: echo "Hello ubuntu"
   job-two:
     name: Build job two
     runs-on: windows-latest
@@ -17,4 +17,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Say hello
-        run: echo "Hello windows!"
+        run: echo "Hello windows"
