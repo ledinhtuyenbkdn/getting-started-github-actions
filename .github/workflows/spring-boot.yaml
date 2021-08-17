@@ -1,5 +1,5 @@
 name: Spring boot
-on: push
+on: [push, workflow_dispatch]
 env:
   FILE_NAME: demo-0.0.1-SNAPSHOT.jar
 jobs:
